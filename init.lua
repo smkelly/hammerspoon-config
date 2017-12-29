@@ -1,6 +1,6 @@
 
-require("autoreload")
-require("brightness")
+dofile("autoreload.lua")
+dofile("brightness.lua")
 
 --- Notify that load is done
 hs.notify.new({
