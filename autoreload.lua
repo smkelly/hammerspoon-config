@@ -1,6 +1,6 @@
 --- Reload config if Lua files are changed.
 function reloadConfig(files)
-    doReload = hs.fnutils.some(files, function(f)
+    local doReload = hs.fnutils.some(files, function(f)
         return f:sub(-4) == ".lua"
     end)
     if doReload then
