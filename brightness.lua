@@ -1,6 +1,9 @@
 --- Shortcut key to toggle screen to full brightness.
 
 local obj = {}
+obj.name = "brightness"
+obj.author = "Sean Kelly <smkelly@smkelly.org>"
+
 setmetatable(obj, obj)
 
 obj.__gc = function(self)

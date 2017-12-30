@@ -1,5 +1,8 @@
 --- Reload config if Lua files are changed.
-obj = {}
+local obj = {}
+obj.name = "autoreload"
+obj.author = "Sean Kelly <smkelly@smkelly.org>"
+
 obj.__gc = function(self)
     self:stop()
   end  
